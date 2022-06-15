@@ -6,7 +6,7 @@ const userAge = parseInt(prompt("Inserisci (in numero) la tua età: "));
 let ticketPrice;
 
 // Check if the inputs are valid numbers 
-if (isNaN(travelKms) || isNaN(userAge)) {
+if (isNaN(travelKms) || travelKms < 0 || isNaN(userAge) || userAge < 0) {
     console.log("Impossibile calcolare prezzo poichè i dati non sono stati inseriti correttamente")
 
 } else {
